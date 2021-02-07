@@ -203,7 +203,7 @@ section .title::after {
 
 .home {
     display: flex;
-    background: url("images/bg.png");
+    background: url("bg.png");
     height: 110vh;
     color: #fff;
     min-height: 500px;
