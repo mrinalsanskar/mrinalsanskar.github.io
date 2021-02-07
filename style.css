@@ -258,7 +258,7 @@ section .title::after {
 /* about section styling */
 
 .about .title::after {
-    content: "THIS IS WHO I AM";
+    content: "WHO I AM";
 }
 
 .about .about-content .left {
@@ -461,7 +461,7 @@ section .title::after {
 
 .project .title::after {
     background: #111;
-    content: "Why ME?";
+    content: "My Work";
 }
 
 .project .project-content .card {
@@ -533,7 +533,7 @@ section .title::after {
 }
 
 .contact .title::after {
-    content: "Wanna Know More?";
+    content: "To Know More?";
 }
 
 .contact .contact-content .column {
