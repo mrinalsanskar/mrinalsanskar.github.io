@@ -672,7 +672,8 @@ footer span a:hover {
     .about .about-content .right {
         flex: 100%;
     }
-    .education .edu-content .card {
+    .education .edu-content .card,
+    .project .project-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -696,7 +697,8 @@ footer span a:hover {
     .home .home-content a {
         font-size: 20px;
     }
-    .education .edu-content .card {
+    .education .edu-content .card,
+    .project .project-content .card {
         width: 100%;
     }
 }
