@@ -12,6 +12,13 @@ html {
     scroll-behavior: smooth;
 }
 
+/* dark mode view styling*/
+.dark,
+.dark * {
+    background-color: #222;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
+}
 
 /* custom scroll bar */
 
