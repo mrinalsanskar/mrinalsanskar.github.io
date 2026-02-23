@@ -81,3 +81,41 @@ $(".inner-switch").on("click", function() {
         $(".inner-switch").text("ON");
     }
 });
+
+// ===== Typing Effect =====
+const roles = [
+  "Java Backend Engineer",
+  "Microservices Developer",
+  "System Design Learner",
+  "Technical Writer"
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let typingElement = document.getElementById("typing-role");
+
+function typeRole() {
+  if (!typingElement) return;
+
+  if (charIndex < roles[roleIndex].length) {
+    typingElement.textContent += roles[roleIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeRole, 80);
+  } else {
+    setTimeout(eraseRole, 1500);
+  }
+}
+
+function eraseRole() {
+  if (charIndex > 0) {
+    typingElement.textContent =
+      roles[roleIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(eraseRole, 40);
+  } else {
+    roleIndex = (roleIndex + 1) % roles.length;
+    setTimeout(typeRole, 300);
+  }
+}
+
+typeRole();
